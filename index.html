@@ -11,15 +11,21 @@
 </head>
 
 <body>
-    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-        <div class="form-group">
-            <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-            <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+    <div class="container">
+        <div class="row min-height=75px">
+            <h3>Music Is Fun</h3>
+            <div class="col-sm-6">
+                <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+                    <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+                        <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+                    </div>
+                </form>
+            <div id="songs">
+            </div class="row">    
+            </div>
         </div>
-    </form>
-    <div id="songs">
-
     </div>
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
     <script src="itunes-service.js"></script>
